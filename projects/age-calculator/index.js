@@ -29,3 +29,11 @@ function getAge(birthdayValue) {
 }
 
 btnEl.addEventListener("click", calculateAge);
+
+// ✅ New: Clear button logic
+const clearBtn = document.getElementById("clearBtn");
+
+clearBtn.addEventListener("click", function () {
+  birthdayEl.value = "";
+  resultEl.innerText = "";
+});
