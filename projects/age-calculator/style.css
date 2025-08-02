@@ -1,25 +1,25 @@
 body {
   margin: 0;
-  padding: 20px;
   font-family: "Montserrat", sans-serif;
   background-color: #f7f7f7;
 }
 
 .container {
-  background-color: white;
+  background-color: #FFEAEA;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   padding: 20px;
-  max-width: 600px;
+  width: auto;
+  height: 700px;
   margin: 0 auto;
   border-radius: 5px;
-  margin-top: 50px;
+  /* margin-top: 50px; */
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 50px;
   text-align: center;
-  margin-top: 0;
-  margin-bottom: 20px;
+  margin-top: 200px;
+  margin-bottom: 50px;
 }
 
 .form {
@@ -30,6 +30,7 @@ h1 {
 
 label {
   font-weight: bold;
+  font-size: 25px;
   margin-bottom: 10px;
 }
 
@@ -42,7 +43,7 @@ input {
 }
 
 button {
-  background-color: #007bff;
+  background-color: #687FE5;
   color: white;
   border: none;
   padding: 10px 20px;
