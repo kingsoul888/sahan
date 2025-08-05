@@ -17,6 +17,7 @@ function updateTimer() {
 }
 
 function startTimer() {
+  if (interval) return;
   interval = setInterval(() => {
     timeLeft--;
     updateTimer();
@@ -24,15 +25,18 @@ function startTimer() {
       clearInterval(interval);
       alert("Time's up!");
       timeLeft = 1500;
+      interval = null;
       updateTimer();
     }
   }, 1000);
 }
 function stopTimer() {
   clearInterval(interval);
+  interval = null;
 }
 function resetTimer() {
   clearInterval(interval);
+  interval = null;
   timeLeft = 1500;
   updateTimer();
 }
