@@ -23,9 +23,9 @@ function startTimer() {
     updateTimer();
     if (timeLeft === 0) {
       clearInterval(interval);
-      interval = null;
       alert("Time's up!");
       timeLeft = 1500;
+      interval = null;
       updateTimer();
     }
   }, 1000);
